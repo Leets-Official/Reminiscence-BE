@@ -25,7 +25,7 @@ public class MemberService implements UserDetailsService {
     @Transactional
     public void joinMember(Member member) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        member.setMemberPwd(passwordEncoder.encode(member.getPassword()));
+        member.setPw(passwordEncoder.encode(member.getPassword()));
         member.setMGradeStr("ROLE_USER");
         memberMapper.save(member);
     }
