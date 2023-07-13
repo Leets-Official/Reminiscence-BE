@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zero100study.demo.mapper.MemberMapper">
+    <!-- 회원가입 -->
+    <insert id="save" parameterType="com.zero100study.demo.domain.Member">
+        INSERT INTO Users
+            (NickName, Password, Email, CreateDate)
+        VALUES(#{mName},#{memberPwd}, #{memberId}, #{mDate});
+    </insert>
+</mapper>
