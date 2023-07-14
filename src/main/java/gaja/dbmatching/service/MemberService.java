@@ -1,7 +1,8 @@
 package gaja.dbmatching.service;
 
 import gaja.dbmatching.domain.Member;
-import gaja.dbmatching.mapper.MemberMapper;
+import gaja.dbmatching.dto.MemberDto;
+import gaja.dbmatching.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -16,18 +17,23 @@ import java.util.Date;
 @Service
 @RequiredArgsConstructor
 public class MemberService implements UserDetailsService {
-    private final MemberMapper memberMapper;
+    private final MemberRepository memberRepository;
 
     SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:sss");
     Date time = new Date();
     String localTime = format.format(time);
 
     @Transactional
-    public void joinMember(Member member) {
+    public void joinMember(MemberDto dto) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        member.setPw(passwordEncoder.encode(member.getPassword()));
-        member.setMGradeStr("ROLE_USER");
-        memberMapper.save(member);
+        Member member = Member.builder()
+                .email(dto.getEmail())
+                .nickname(dto.getNickname())
+                .pw(passwordEncoder.encode(dto.getPw()))
+                .createDate(dto.getCreateDate())
+                .mGradeStr("ROLE_USER")
+                .build();
+        memberRepository.save(member);
     }
 
     @Override

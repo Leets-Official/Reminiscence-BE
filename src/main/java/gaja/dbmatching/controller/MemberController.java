@@ -1,15 +1,15 @@
 package gaja.dbmatching.controller;
 
+import gaja.dbmatching.dto.MemberDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import gaja.dbmatching.service.MemberService;
-import gaja.dbmatching.domain.Member;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
 @RequiredArgsConstructor
-
+@RestController
 public class MemberController {
     private final MemberService memberService;
     @GetMapping("/")
@@ -29,9 +29,8 @@ public class MemberController {
      * 회원가입 폼 제출(Post 요청)
      */
     @PostMapping("/register")
-    public String register(Member member) {
-        memberService.joinMember(member);
-        return "redirect:/register";
+    public boolean register(@RequestBody MemberDto dto) {
+        memberService.joinMember(dto);
+        return true;
     }
-
 }
