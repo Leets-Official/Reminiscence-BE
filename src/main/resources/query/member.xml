@@ -3,9 +3,15 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="gaja.dbmatching.mapper.MemberMapper">
+    <!-- 로그인 -->
+    <select id="getUserAccount" resultType="gaja.dbmatching.domain.Member">
+        SELECT * FROM Users <!--테이블 선택-->
+        WHERE Email= #{email}
+    </select>
     <!-- 회원가입 -->
     <insert id="save" parameterType="gaja.dbmatching.domain.Member">
-        INSERT INTO Users (NickName, Email, Password, CreateDate, m_grade_str)
+        INSERT INTO Users <!--테이블 선택-->
+            (NickName, Email, Password, CreateDate, m_grade_str)
         VALUES (#{nickname}, #{email}, #{pw}, #{createDate}, #{mGradeStr});
     </insert>
 </mapper>
