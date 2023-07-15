@@ -15,6 +15,7 @@ import java.util.Date;
 @Service
 @RequiredArgsConstructor
 public class MemberService implements UserDetailsService {
+
     private final MemberMapper memberMapper;
 
     SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:sss");

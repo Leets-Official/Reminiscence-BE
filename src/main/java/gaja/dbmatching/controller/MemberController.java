@@ -52,6 +52,7 @@ public class MemberController {
         return "redirect:/login"; // 회원가입 후 로그인 페이지로 리다이렉트
     }
 
+
     /**
      * 유저 페이지
      */
