@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 public interface MemberMapper {
 
     //로그인
-    Member getUserAccount(String email);
+    Member getMemberAccount(String email);
 
     // 회원가입
     void save(Member member);

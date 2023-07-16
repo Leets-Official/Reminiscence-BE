@@ -25,7 +25,7 @@ public class MemberService implements UserDetailsService {
     @Transactional
     public void joinMember(Member member) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        member.setPw(passwordEncoder.encode(member.getPassword()));
+        member.setPassword(passwordEncoder.encode(member.getPassword()));
         member.setMGradeStr("ROLE_USER");
         memberMapper.save(member);
     }
@@ -33,7 +33,7 @@ public class MemberService implements UserDetailsService {
     @Override
     public Member loadUserByUsername(String email) throws UsernameNotFoundException {
         //여기서 받은 유저 패스워드와 비교하여 로그인 인증
-        Member member = memberMapper.getUserAccount(email);
+        Member member = memberMapper.getMemberAccount(email);
         if (member == null){
             throw new UsernameNotFoundException("User not authorized.");
         }

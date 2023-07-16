@@ -1,6 +1,7 @@
 package gaja.dbmatching.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,7 +12,6 @@ import gaja.dbmatching.domain.Member;
 
 @Controller
 @RequiredArgsConstructor
-
 public class MemberController {
     private final MemberService memberService;
     @GetMapping("/")
@@ -25,6 +25,14 @@ public class MemberController {
     @GetMapping("/register")
     public String registerForm() {
         return "register";
+    }
+    /**
+     * 회원가입 폼 제출(Post 요청)
+     */
+    @PostMapping("/register")
+    public String register(Member member) {
+        memberService.joinMember(member);
+        return "redirect:/login"; // 회원가입 후 로그인 페이지로 리다이렉트
     }
     /**
      * 로그인 폼(Get 요청)
@@ -42,16 +50,6 @@ public class MemberController {
     public String accessDenied() {
         return "access_denied";
     }
-
-    /**
-     * 회원가입 폼 제출(Post 요청)
-     */
-    @PostMapping("/register")
-    public String register( Member member) {
-        memberService.joinMember(member);
-        return "redirect:/login"; // 회원가입 후 로그인 페이지로 리다이렉트
-    }
-
 
     /**
      * 유저 페이지
