@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>post 작성폼</title>
+</head>
+<style>
+  .layout{
+    width :500px;
+    margin : 0 auto;
+    margin-top: 40px;
+  }
+
+  .layout input {
+    width : 100%;
+    box-sizing: border-box;
+  }
+
+  .layout textarea {
+    width : 100%;
+    margin-top: 10px;
+    min-height: 300px;
+  }
+</style>
+
+<body>
+<div class ="layout">
+  <!--1. 태그를 form 안으로 묶기-->
+  <form action="/post/writepro" method="post" enctype="multipart/form-data"> <!--4.제출된 정보(title, content)가 이 주소로 넘어감, enctype이미지를 위함 태그-->
+    <input name = "Photographer" type = "text"> <!--2.name, content의 이름을 지정해주기-->
+    <textarea name ="Caption"></textarea>
+    <input name = "file" type="file"><!--이미지를 위한 태그-->
+    <!--"@{${board.filepath}"-->
+    <button type="submit">작성하기</button> <!--3.버튼을 submit할 경우, form 태그 안에 action주소로 넘어감.-->
+  </form>
+</div>
+
+</body>
+</html>
