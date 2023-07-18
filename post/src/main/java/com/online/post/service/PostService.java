@@ -19,6 +19,8 @@ public class PostService {
         this.postRepository = postRepository;
     }
 
+
+    //글 작성 처리
     public void write(Post post, MultipartFile file) throws Exception {
 
         //MultipartFile로 매개 변수로 이미지 파일도 받는다. static files을 만들어 이미지 파일을 저장한다.
@@ -30,11 +32,31 @@ public class PostService {
         File saveFile = new File(projectPath, fileName);//경로와 이름을 지정하여 FILE이라는 껍떼기를 만들어서 저장함
         file.transferTo(saveFile);
 
+        //post.getDate(Date);
         post.setFilename(fileName);
         post.setFilepath("/files/" + fileName);
 
+
         postRepository.save(post); //3.반환값을 저장한다.
     }
-//spring.jpa.hibernate.ddl-auto=update
-    //spring.jpa.properties.hibernate.format_sql=true---> 테이블 스퀜시 생김
+
+    //게시물 리스트 처리
+    /*public List<Post> postList(){
+        return postRepository.findAll();
+    }
+*/
+    //게시물 읽어오기 처리
+    public Post postView(Integer id){
+        return postRepository.findById(id).get();
+    }
+
+    //특정 게시물 삭제
+
+    public void postDelete(Integer id){
+
+
+        postRepository.deleteById(id);
+    }
+
+
 }
