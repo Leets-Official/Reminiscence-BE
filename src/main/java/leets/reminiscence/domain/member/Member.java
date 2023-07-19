@@ -6,10 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter
 @AllArgsConstructor
@@ -23,13 +20,11 @@ public class Member {
     private String password;
     private String birthday;
     @Enumerated(EnumType.STRING)
-    private Role role;
+    private Role role; //권한 -> USER, ADMIN
+    @Column(length = 1000)
+    private String refreshToken; //JWT RefreshToken
 
     /////////////////////////////
-
-//    public void setPassword(String password) {
-//        this.password = password;
-//    }
 
     public void setEmail(String email){
         this.email = email;
@@ -53,4 +48,10 @@ public class Member {
         this.password = passwordEncoder.encode(password);
     }
 
+    public void setRefreshToken(String refreshToken){
+        this.refreshToken = refreshToken;
+    }
+    public void destroyRefreshToken(){
+        this.refreshToken = null;
+    }
 }
