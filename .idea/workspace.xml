@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2753187b-d411-4a6d-b48f-1452898ce96a" name="변경" comment="" />
+    <list default="true" id="2753187b-d411-4a6d-b48f-1452898ce96a" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/login/filter/JsonUsernamePasswordAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/login/handler/LoginFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/login/handler/LoginSuccessJWTProvideHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leets/reminiscence/global/config/SecurityConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leets/reminiscence/global/login/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leets/reminiscence/repository/MemberRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/917b12b6-4966-4651-9bc6-5129ae4f901f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/917b12b6-4966-4651-9bc6-5129ae4f901f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +50,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,7 +68,6 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -63,6 +80,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/jeongwan/Library/CloudStorage/OneDrive-gc.gachon.ac.kr/가천대/23학년도/Leets/reminiscence/Zero100-BE/build.gradle",
     "node.js.detected.package.eslint": "true",
@@ -83,7 +102,94 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.DbmatchingApplication">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="leets.reminiscence.config" />
+      <recent name="leets.reminiscence.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LoginTest.로그인_데이터형식_JSON이_아니면_200">
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reminiscence.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leets.reminiscence.global.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leets.reminiscence.global.login" />
+      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.global.login.LoginTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.로그인_성공" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reminiscence.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leets.reminiscence.global.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leets.reminiscence.global.login" />
+      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.global.login.LoginTest" />
+      <option name="METHOD_NAME" value="로그인_성공" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.로그인_실패_비밀번호틀림" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reminiscence.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leets.reminiscence.global.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leets.reminiscence.global.login" />
+      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.global.login.LoginTest" />
+      <option name="METHOD_NAME" value="로그인_실패_비밀번호틀림" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.로그인_데이터형식_JSON이_아니면_200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reminiscence.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leets.reminiscence.global.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leets.reminiscence.global.login" />
+      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.global.login.LoginTest" />
+      <option name="METHOD_NAME" value="로그인_데이터형식_JSON이_아니면_200" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reminiscence.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leets.reminiscence.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leets.reminiscence.config" />
+      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.config.SecurityConfigTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="dbmatching" />
       <method v="2">
@@ -118,6 +224,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LoginTest.로그인_데이터형식_JSON이_아니면_200" />
+        <item itemvalue="JUnit.LoginTest.로그인_실패_비밀번호틀림" />
+        <item itemvalue="JUnit.LoginTest.로그인_성공" />
+        <item itemvalue="JUnit.LoginTest" />
+        <item itemvalue="JUnit.SecurityConfigTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -134,7 +249,7 @@
       <workItem from="1689726919710" duration="1342000" />
       <workItem from="1689733072773" duration="76000" />
       <workItem from="1689776885662" duration="39000" />
-      <workItem from="1689777441231" duration="22000" />
+      <workItem from="1689777441231" duration="8127000" />
     </task>
     <servers />
   </component>
