@@ -68,7 +68,7 @@ class LoginTest {
                 .email(USERNAME)
                 .password(delegatingPasswordEncoder.encode(PASSWORD))
                 .username("NickName1")
-                .role(Role.USER)
+                .role(Role.ROLE_USER)
                 .birthday("2023-05-04")
                 .build());
         clear();

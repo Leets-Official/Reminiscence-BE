@@ -54,4 +54,15 @@ public class Member {
     public void destroyRefreshToken(){
         this.refreshToken = null;
     }
+
+//  비밀번호 변경 관련 메서드
+    public boolean matchPassword(PasswordEncoder passwordEncoder, String checkPassword){
+        return passwordEncoder.matches(checkPassword, getPassword());
+    }
+
+//  회원가입시, USER의 권한을 부여하는 메서드입니다.
+
+    public void addUserAuthority() {
+        this.role = Role.ROLE_USER;
+    }
 }

@@ -5,21 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2753187b-d411-4a6d-b48f-1452898ce96a" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/config/jwt/service/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/config/jwt/service/JwtServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-jwt.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leets/reminiscence/global/config/jwt/service/JwtServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/dto/MemberInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/dto/MemberSignUpDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/dto/MemberUpdateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/dto/MemberWithdrawDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/dto/UpdatePasswordDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/service/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/exception/ExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/jwt/filter/JwtAuthenticationProcessingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/jwt/service/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/util/SecurityUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leets/reminiscence/domain/member/controller/MemberControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leets/reminiscence/domain/member/service/MemberServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leets/reminiscence/global/jwt/filter/JwtAuthenticationFilterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/member/Member$MemberBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/member/Member$MemberBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/member/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/member/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/member/repository/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/member/repository/MemberRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/member/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/member/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/global/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/global/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/global/config/jwt/service/JwtService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/global/config/jwt/service/JwtServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/global/login/filter/JsonUsernamePasswordAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/global/login/filter/JsonUsernamePasswordAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/global/login/handler/LoginSuccessJWTProvideHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/global/login/handler/LoginSuccessJWTProvideHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/leets/reminiscence/global/config/jwt/service/JwtServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/leets/reminiscence/global/config/jwt/service/JwtServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/leets/reminiscence/global/login/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/leets/reminiscence/global/login/LoginTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/member/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/config/jwt/service/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/config/jwt/service/JwtServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/jwt/service/JwtServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/login/filter/JsonUsernamePasswordAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/login/filter/JsonUsernamePasswordAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/login/handler/LoginSuccessJWTProvideHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/login/handler/LoginSuccessJWTProvideHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/leets/reminiscence/global/config/jwt/service/JwtServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leets/reminiscence/global/config/jwt/service/JwtServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/leets/reminiscence/global/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leets/reminiscence/global/login/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,86 +129,87 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="leets.reminiscence.domain.member.controller" />
+      <recent name="leets.reminiscence.domain.member.service" />
+      <recent name="leets.reminiscence.global.jwt.filter" />
       <recent name="leets.reminiscence.global.config.jwt.service" />
       <recent name="leets.reminiscence.config" />
-      <recent name="leets.reminiscence.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JwtServiceImplTest">
-    <configuration name="JwtServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MemberControllerTest">
+    <configuration name="MemberControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reminiscence.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leets.reminiscence.global.config.jwt.service.*" />
+          <option name="PATTERN" value="leets.reminiscence.domain.member.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leets.reminiscence.global.config.jwt.service" />
-      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.global.config.jwt.service.JwtServiceImplTest" />
+      <option name="PACKAGE_NAME" value="leets.reminiscence.domain.member.controller" />
+      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.domain.member.controller.MemberControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JwtServiceImplTest.createAccessToken_AccessToken_발급" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MemberControllerTest.회원가입_성공" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reminiscence.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leets.reminiscence.global.config.jwt.service.*" />
+          <option name="PATTERN" value="leets.reminiscence.domain.member.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leets.reminiscence.global.config.jwt.service" />
-      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.global.config.jwt.service.JwtServiceImplTest" />
-      <option name="METHOD_NAME" value="createAccessToken_AccessToken_발급" />
+      <option name="PACKAGE_NAME" value="leets.reminiscence.domain.member.controller" />
+      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.domain.member.controller.MemberControllerTest" />
+      <option name="METHOD_NAME" value="회원가입_성공" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.로그인_성공" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MemberServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reminiscence.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leets.reminiscence.global.login.*" />
+          <option name="PATTERN" value="leets.reminiscence.domain.member.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leets.reminiscence.global.login" />
-      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.global.login.LoginTest" />
-      <option name="METHOD_NAME" value="로그인_성공" />
+      <option name="PACKAGE_NAME" value="leets.reminiscence.domain.member.service" />
+      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.domain.member.service.MemberServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberServiceTest.회원정보조회" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reminiscence.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leets.reminiscence.domain.member.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leets.reminiscence.domain.member.service" />
+      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.domain.member.service.MemberServiceTest" />
+      <option name="METHOD_NAME" value="회원정보조회" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.로그인_실패_비밀번호틀림" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MemberServiceTest.회원가입_실패_입력하지않은_필드가있으면_오류" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reminiscence.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leets.reminiscence.global.login.*" />
+          <option name="PATTERN" value="leets.reminiscence.domain.member.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leets.reminiscence.global.login" />
-      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.global.login.LoginTest" />
-      <option name="METHOD_NAME" value="로그인_실패_비밀번호틀림" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.로그인_데이터형식_JSON이_아니면_200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reminiscence.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leets.reminiscence.global.login.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leets.reminiscence.global.login" />
-      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.global.login.LoginTest" />
-      <option name="METHOD_NAME" value="로그인_데이터형식_JSON이_아니면_200" />
+      <option name="PACKAGE_NAME" value="leets.reminiscence.domain.member.service" />
+      <option name="MAIN_CLASS_NAME" value="leets.reminiscence.domain.member.service.MemberServiceTest" />
+      <option name="METHOD_NAME" value="회원가입_실패_입력하지않은_필드가있으면_오류" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -231,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JwtServiceImplTest" />
-        <item itemvalue="JUnit.JwtServiceImplTest.createAccessToken_AccessToken_발급" />
-        <item itemvalue="JUnit.LoginTest.로그인_데이터형식_JSON이_아니면_200" />
-        <item itemvalue="JUnit.LoginTest.로그인_실패_비밀번호틀림" />
-        <item itemvalue="JUnit.LoginTest.로그인_성공" />
+        <item itemvalue="JUnit.MemberControllerTest" />
+        <item itemvalue="JUnit.MemberControllerTest.회원가입_성공" />
+        <item itemvalue="JUnit.MemberServiceTest.회원가입_실패_입력하지않은_필드가있으면_오류" />
+        <item itemvalue="JUnit.MemberServiceTest" />
+        <item itemvalue="JUnit.MemberServiceTest.회원정보조회" />
       </list>
     </recent_temporary>
   </component>
@@ -254,12 +274,16 @@
       <workItem from="1689726919710" duration="1342000" />
       <workItem from="1689733072773" duration="76000" />
       <workItem from="1689776885662" duration="39000" />
-      <workItem from="1689777441231" duration="11954000" />
+      <workItem from="1689777441231" duration="34047000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="JWT 로그인 인증 구현 중" />
+    <option name="LAST_COMMIT_MESSAGE" value="JWT 로그인 인증 구현 중" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

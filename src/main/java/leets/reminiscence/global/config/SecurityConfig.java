@@ -1,7 +1,10 @@
 package leets.reminiscence.global.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import leets.reminiscence.domain.member.repository.MemberRepository;
 import leets.reminiscence.domain.member.service.LoginService;
+import leets.reminiscence.global.jwt.filter.JwtAuthenticationProcessingFilter;
+import leets.reminiscence.global.jwt.service.JwtService;
 import leets.reminiscence.global.login.filter.JsonUsernamePasswordAuthenticationFilter;
 import leets.reminiscence.global.login.handler.LoginFailureHandler;
 import leets.reminiscence.global.login.handler.LoginSuccessJWTProvideHandler;
@@ -24,6 +27,8 @@ public class SecurityConfig {
 
     private final LoginService loginService;
     private final ObjectMapper objectMapper;
+    private final JwtService jwtService;
+    private final MemberRepository memberRepository;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -40,6 +45,7 @@ public class SecurityConfig {
                 .anyRequest().authenticated();
 
         http.addFilterAfter(jsonUsernamePasswordLoginFilter(), LogoutFilter.class);
+        http.addFilterBefore(jwtAuthenticationProcessingFilter(), JsonUsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
 
@@ -58,7 +64,7 @@ public class SecurityConfig {
 
     @Bean
     public LoginSuccessJWTProvideHandler loginSuccessJWTProvideHandler(){
-        return new LoginSuccessJWTProvideHandler();
+        return new LoginSuccessJWTProvideHandler(jwtService, memberRepository);
     }
 
     @Bean
@@ -72,6 +78,13 @@ public class SecurityConfig {
         jsonUsernamePasswordLoginFilter.setAuthenticationManager(authenticationManager());
         jsonUsernamePasswordLoginFilter.setAuthenticationSuccessHandler(loginSuccessJWTProvideHandler());
         jsonUsernamePasswordLoginFilter.setAuthenticationFailureHandler(loginFailureHandler());
+        return jsonUsernamePasswordLoginFilter;
+    }
+
+    @Bean
+    public JwtAuthenticationProcessingFilter jwtAuthenticationProcessingFilter(){
+        JwtAuthenticationProcessingFilter jsonUsernamePasswordLoginFilter = new JwtAuthenticationProcessingFilter(jwtService, memberRepository);
+
         return jsonUsernamePasswordLoginFilter;
     }
 
