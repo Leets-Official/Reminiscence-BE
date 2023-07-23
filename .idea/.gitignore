@@ -6,3 +6,6 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+### 서버 설정 파일 ###
+/src/main/resources/application-jwt.yml
+/src/main/resources/application-oauth.yml

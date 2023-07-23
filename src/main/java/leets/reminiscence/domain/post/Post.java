@@ -1,12 +1,13 @@
 package leets.reminiscence.domain.post;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 import lombok.*;
 
+import java.math.BigInteger;
 import java.util.Date;
+
+import static javax.persistence.FetchType.LAZY;
 
 
 @Entity

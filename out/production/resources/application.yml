@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    group:
+      "local" : "local, jwt, oauth"
+    active : local
+
+---
+spring:
+  config:
+    activate:
+      on-profile: "local"
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://zero100.cjcqy3giqbqr.ap-southeast-2.rds.amazonaws.com:3306/zero100
+    username: zero100
+    password: 20230504
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+---
+spring:
+  servlet:
+    multipart:
+      maxFileSize: 50MB
+      maxRequestSize: 50MB
+
