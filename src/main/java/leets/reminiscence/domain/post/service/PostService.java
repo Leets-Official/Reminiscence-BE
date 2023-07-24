@@ -3,6 +3,8 @@ package leets.reminiscence.domain.post.service;
 import leets.reminiscence.domain.post.dto.PostDto;
 import leets.reminiscence.domain.post.Post;
 import leets.reminiscence.domain.post.repository.PostRepository;
+import leets.reminiscence.domain.user.User;
+import leets.reminiscence.domain.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,16 +18,17 @@ import java.util.UUID;
 public class PostService {
 
     private final PostRepository postRepository;
-
-    public Post write(PostDto postDto, MultipartFile file) throws Exception {
+    private final UserRepository userRepository;
+    public Post write(PostDto postDto, MultipartFile file, User user) throws Exception {
         Post post = Post.builder().date(postDto.getDate())
+                .userid(user)
                 .caption(postDto.getCaption())
                 .photographer(postDto.getPhotographer())
                 .snsLink(postDto.getSnsLink())
                 .light(postDto.getLight())
                 .build();
 
-        String projectPath = System.getProperty("user.dir") + "//src//main//resources//static//files";
+        String projectPath = System.getProperty("user.dir") + "/src/main/resources/static/files";
 
         UUID uuid = UUID.randomUUID();
 
@@ -39,9 +42,10 @@ public class PostService {
 
         return postRepository.save(post); //3.반환값을 저장한다.
     }
-
-    public Optional<Post> postView(Integer id){
-        return postRepository.findById(id);
+    public User saveUser(User user) {
+        return userRepository.save(user);
+    }
+    public Optional<Post> postView(Integer id){return postRepository.findById(id);
     }
 
     public void postDelete(Integer id){

@@ -1,5 +1,6 @@
 package leets.reminiscence.domain.post.dto;
 
+import leets.reminiscence.domain.user.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -17,4 +18,5 @@ public class PostDto {
     private String fileName;
     private String filePath;
     private String light;
+    private Integer userId;
 }
