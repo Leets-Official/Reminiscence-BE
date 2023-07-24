@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc501c56-017f-427a-8622-e992d1822875" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/Post$PostBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/Post$PostBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/controller/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/dto/PostDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/dto/PostDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/service/PostService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/files/4f34fbab-8f9e-435b-9e9a-5e66a159b918_please.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/files/986a29eb-6dbd-438e-a9ce-60c6ff311abb_KSD_4663.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/static/files/e0cb33d3-2888-4bc1-97ac-da091dbd222c_KSD_4663.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/dto/PostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/dto/PostDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/controller/UserController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2Syfn4mm6ya0GC8BVNtXwsJprCl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "logout",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDK",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "spring.boot",
+    "spring.configuration.checksum": "c9f3a436db6a271ea323cb43086bf0c4",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ReminiscenceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="reminiscence.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="leets.reminiscence.ReminiscenceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="fc501c56-017f-427a-8622-e992d1822875" name="변경" comment="" />
+      <created>1690123905109</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690123905109</updated>
+      <workItem from="1690123906678" duration="1660000" />
+      <workItem from="1690125761267" duration="11369000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
