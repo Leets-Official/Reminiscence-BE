@@ -66,6 +66,7 @@ public class SecurityConfig {
                 .antMatchers("/post").permitAll() // post 접근 가능
                 .antMatchers("/post/{id}").permitAll() // post id 정보 접근 가능
                 .antMatchers("/post/delete/{id}").permitAll() // post delete 접근 가능
+                .antMatchers("/v3/api-docs/**", "/swagger-ui/**").permitAll()
                 .anyRequest().authenticated() // 위의 경로 이외에는 모두 인증된 사용자만 접근 가능
                 .and()
                 //== 소셜 로그인 설정 ==//

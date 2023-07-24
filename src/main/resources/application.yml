@@ -34,3 +34,14 @@ spring:
       maxFileSize: 50MB
       maxRequestSize: 50MB
 
+
+---
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+---
+      springdoc:
+        swagger-ui:
+          persist-authorization: true
