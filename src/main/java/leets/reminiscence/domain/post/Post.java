@@ -31,8 +31,4 @@ public class Post {
     private String light;
 
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> main

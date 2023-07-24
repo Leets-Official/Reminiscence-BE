@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Optional;
-<<<<<<< HEAD
-=======
-//하이
->>>>>>> main
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/post")

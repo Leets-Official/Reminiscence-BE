@@ -28,11 +28,7 @@ public class PostService {
                 .light(postDto.getLight())
                 .build();
 
-<<<<<<< HEAD
-        String projectPath = System.getProperty("user.dir") + "/src/main/resources/static/files";
-=======
         String projectPath = System.getProperty("user.dir") + "\\src\\main\\resources\\static\\files";
->>>>>>> main
 
         UUID uuid = UUID.randomUUID();
 
