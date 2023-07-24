@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc501c56-017f-427a-8622-e992d1822875" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/Post$PostBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/Post$PostBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/controller/PostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/dto/PostDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/dto/PostDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/post/service/PostService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/files/4f34fbab-8f9e-435b-9e9a-5e66a159b918_please.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/files/986a29eb-6dbd-438e-a9ce-60c6ff311abb_KSD_4663.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/files/e0cb33d3-2888-4bc1-97ac-da091dbd222c_KSD_4663.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/dto/PostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/dto/PostDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/post/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +18,18 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,21 +56,35 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "logout",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/jeongwan/Library/CloudStorage/OneDrive-gc.gachon.ac.kr/가천대/23학년도/Leets/reminiscence/Zero100-BE/build.gradle",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDK",
+    "project.structure.last.edited": "프로젝트",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "spring.boot",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "spring.configuration.checksum": "c9f3a436db6a271ea323cb43086bf0c4",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Zero100-BE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Zero100-BE" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReminiscenceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="reminiscence.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="leets.reminiscence.ReminiscenceApplication" />
@@ -93,6 +103,7 @@
       <updated>1690123905109</updated>
       <workItem from="1690123906678" duration="1660000" />
       <workItem from="1690125761267" duration="11369000" />
+      <workItem from="1690169015275" duration="394000" />
     </task>
     <servers />
   </component>
