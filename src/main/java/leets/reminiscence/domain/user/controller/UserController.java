@@ -17,7 +17,7 @@ public class UserController {
 
     private final UserService userService;
 
-    @Operation(summary = "일반 회원가입 폼..?", description = "사진을 볼 수 있어용.", tags = { "Post Controller" })
+    @Operation(summary = "일반 회원가입 폼..?", description = "사진을 볼 수 있어용.", tags = { "User Controller" })
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "OK",
                     content = @Content(schema = @Schema(implementation = PostController.class))),
@@ -31,6 +31,14 @@ public class UserController {
         return "회원가입 성공";
     }
 
+    @Operation(summary = "로그인을 위한 jwt 토큰 테스트 폼", description = "회원가입 할 시 생성되는 authorization 토큰을 대조하여 맞는지 화긴합니당", tags = { "User Controller" })
+    @ApiResponses({
+            @ApiResponse(responseCode = "200", description = "OK",
+                    content = @Content(schema = @Schema(implementation = PostController.class))),
+            @ApiResponse(responseCode = "400", description = "BAD REQUEST"),
+            @ApiResponse(responseCode = "404", description = "NOT FOUND"),
+            @ApiResponse(responseCode = "500", description = "INTERNAL SERVER ERROR")
+    })
     @GetMapping("/jwt-test")
     public String jwtTest() {
         return "jwtTest 요청 성공";

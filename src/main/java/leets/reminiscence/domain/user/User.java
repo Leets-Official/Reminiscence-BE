@@ -22,6 +22,10 @@ public class User {
     private String password; // 비밀번호
     private String nickname; // 닉네임
     private String imageUrl; // 프로필 이미지
+    @Column(nullable = true)
+    private String photographerId; //포토그래퍼Id
+    @Column(nullable = true)
+    private int birthday;
     private int age;
     private String city; // 사는 도시
 
@@ -56,6 +60,10 @@ public class User {
 
     public void updateCity(String updateCity) {
         this.city = updateCity;
+    }
+
+    public void updateBirthday(int updateBirthday) {
+        this.birthday = updateBirthday;
     }
 
     public void updatePassword(String updatePassword, PasswordEncoder passwordEncoder) {
