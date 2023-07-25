@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fc501c56-017f-427a-8622-e992d1822875" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/global/swagger/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/global/swagger/SwaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/dto/UserSignUpDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/leets/reminiscence/domain/user/dto/UserSignUpDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/dto/UserSignUpDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/domain/user/dto/UserSignUpDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/swagger/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leets/reminiscence/global/swagger/SwaggerConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,30 +54,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/jeongwan/Library/CloudStorage/OneDrive-gc.gachon.ac.kr/가천대/23학년도/Leets/reminiscence/Zero100-BE/build.gradle",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "프로젝트",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "spring.configuration.checksum": "c9f3a436db6a271ea323cb43086bf0c4",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jeongwan/Library/CloudStorage/OneDrive-gc.gachon.ac.kr/가천대/23학년도/Leets/reminiscence/Zero100-BE/build.gradle&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c9f3a436db6a271ea323cb43086bf0c4&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Zero100-BE" />
@@ -112,7 +111,8 @@
       <workItem from="1690123906678" duration="1660000" />
       <workItem from="1690125761267" duration="11369000" />
       <workItem from="1690169015275" duration="8272000" />
-      <workItem from="1690207638109" duration="8247000" />
+      <workItem from="1690207638109" duration="9699000" />
+      <workItem from="1690258789445" duration="2343000" />
     </task>
     <servers />
   </component>

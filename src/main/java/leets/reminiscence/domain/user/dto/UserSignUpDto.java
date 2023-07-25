@@ -10,7 +10,7 @@ public class UserSignUpDto {
     private String email;
     private String password;
     private String nickname;
-    private int birthday;
+    private String birthday;
     private int age;
     private String photographerId;
     private String city;

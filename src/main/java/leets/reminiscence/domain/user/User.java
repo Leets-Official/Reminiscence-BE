@@ -25,7 +25,7 @@ public class User {
     @Column(nullable = true)
     private String photographerId; //포토그래퍼Id
     @Column(nullable = true)
-    private int birthday;
+    private String birthday;
     private int age;
     private String city; // 사는 도시
 
@@ -62,7 +62,7 @@ public class User {
         this.city = updateCity;
     }
 
-    public void updateBirthday(int updateBirthday) {
+    public void updateBirthday(String updateBirthday) {
         this.birthday = updateBirthday;
     }
 
