@@ -4,6 +4,7 @@ import leets.reminiscence.domain.user.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
 import java.util.Date;
 
 
@@ -12,6 +13,7 @@ import java.util.Date;
 public class PostDto {
     private Integer postId;
     private Date date;
+    @Column(nullable = true)
     private String photographer;
     private String caption;
     private String snsLink;

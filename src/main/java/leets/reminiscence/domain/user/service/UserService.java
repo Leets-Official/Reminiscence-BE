@@ -34,6 +34,8 @@ public class UserService {
                 .nickname(userSignUpDto.getNickname())
                 .age(userSignUpDto.getAge())
                 .city(userSignUpDto.getCity())
+                .birthday(userSignUpDto.getBirthday())
+                .photographerId(userSignUpDto.getPhotographerId())
                 .role(Role.USER)
                 .build();
 
