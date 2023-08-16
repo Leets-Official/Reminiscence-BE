@@ -77,9 +77,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "android.gradle.sync.needed": "true",
     "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>5006d85f-b947-46d6-baf3-2880edf25d7e</source-data-source-id>\n        <source-path>schema/&quot;zero100&quot;</source-path>\n        <target-data-source-id>5006d85f-b947-46d6-baf3-2880edf25d7e</target-data-source-id>\n        <target-path>schema/&quot;zero100&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
-    "last_opened_file_path": "C:/Users/dongh/OneDrive - 가천대학교/나의 개발 발자취/LEETS/스프링/demo/Zero100-BE",
+    "last_opened_file_path": "C:/Users/dongh/OneDrive/바탕 화면/Zero100-BE/build.gradle",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -147,7 +146,7 @@
       <workItem from="1690258789445" duration="4280000" />
       <workItem from="1692193250393" duration="4910000" />
       <workItem from="1692198218038" duration="7967000" />
-      <workItem from="1692206288092" duration="1217000" />
+      <workItem from="1692206288092" duration="2151000" />
     </task>
     <servers />
   </component>
