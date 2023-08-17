@@ -1,0 +1,47 @@
+spring:
+  profiles:
+    group:
+      "local" : "local, jwt, oauth"
+    active : local
+
+---
+spring:
+  config:
+    activate:
+      on-profile: "local"
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+---
+spring:
+  servlet:
+    multipart:
+      maxFileSize: 50MB
+      maxRequestSize: 50MB
+
+
+---
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+---
+springdoc:
+  swagger-ui:
+    persist-authorization: true
