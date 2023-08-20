@@ -16,7 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Optional;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/post")
