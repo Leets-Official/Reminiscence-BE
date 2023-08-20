@@ -4,21 +4,21 @@ spring:
       client:
         registration:
           google:
-            client-id: 960371282741-8eqmrvlk0fef97pljhna92vphkifeb4g.apps.googleusercontent.com
-            client-secret: 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
+            client-id: ${GOOGLECLIENTID}
+            client-secret: ${GOOGLECLIENTSECRET}
             scope: profile, email
 
           naver:
-            client-id: xAPODIdqYGJKw3K_KThY
-            client-secret: 3fune3epOP
+            client-id: ${NAVERCLIENTID}
+            client-secret: ${NAVERCLIENTSECRET}
             redirect-uri: http://localhost:8080/login/oauth2/code/naver #(설정한 redirect URI)
             authorization-grant-type: authorization_code
             scope: name, email, profile_image
             client-name: Naver
 
           kakao:
-            client-id: 33bcf7200da944d6cd366f6a2721bbf8
-            client-secret: LXpxK6idizchWay8CjOFXfHthXDGLkgS
+            client-id: ${KAKAOCLIENTID}
+            client-secret: ${KAKAOCLIENTSECRET}
             redirect-uri: http://localhost:8080/login/oauth2/code/kakao #(설정한 redirect URI)
             client-authentication-method: POST
             authorization-grant-type: authorization_code

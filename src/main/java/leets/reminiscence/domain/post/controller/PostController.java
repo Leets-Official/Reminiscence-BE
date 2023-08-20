@@ -1,8 +1,10 @@
 package leets.reminiscence.domain.post.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import leets.reminiscence.domain.post.dto.PostDto;
@@ -32,8 +34,12 @@ public class PostController {
             @ApiResponse(responseCode = "404", description = "NOT FOUND"),
             @ApiResponse(responseCode = "500", description = "INTERNAL SERVER ERROR")
     })
+
     @PostMapping(consumes = {MediaType.MULTIPART_FORM_DATA_VALUE})
-    public Post postWriteForm(@RequestPart PostDto postDto, @RequestPart MultipartFile multipartFile, @RequestPart User user) throws Exception {
+    public Post postWriteForm(
+            @Parameter(description = "PostDto") @RequestBody PostDto postDto,
+            @Parameter(description = "multipartFile") @RequestPart MultipartFile multipartFile,
+            @Parameter(description = "user") @RequestPart User user) throws Exception {
         postService.saveUser(user);
         return postService.write(postDto, multipartFile, user);
     }
@@ -52,13 +58,13 @@ public class PostController {
 
 
     @Operation(summary = "사진 삭제 폼", description = "사진이 없어져용.", tags = { "Post Controller" })
-    @ApiResponses({
+    /*@ApiResponses({
             @ApiResponse(responseCode = "200", description = "OK",
                     content = @Content(schema = @Schema(implementation = PostController.class))),
             @ApiResponse(responseCode = "400", description = "BAD REQUEST"),
             @ApiResponse(responseCode = "404", description = "NOT FOUND"),
             @ApiResponse(responseCode = "500", description = "INTERNAL SERVER ERROR")
-    })
+    })*/
     @DeleteMapping("/delete/{id}")
     public boolean postDelete(@PathVariable Integer id){
 
