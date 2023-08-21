@@ -10,4 +10,5 @@ public class ReminiscenceApplication {
 		SpringApplication.run(ReminiscenceApplication.class, args);
 	}
 
+
 }
