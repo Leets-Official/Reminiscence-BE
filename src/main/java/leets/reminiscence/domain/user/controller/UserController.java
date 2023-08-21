@@ -11,7 +11,7 @@ import leets.reminiscence.domain.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
 @RestController
 @RequiredArgsConstructor
 public class UserController {
