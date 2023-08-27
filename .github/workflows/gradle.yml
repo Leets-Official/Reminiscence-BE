@@ -2,9 +2,9 @@ name: CICD Test for Reminixcence
 run-name: Running
 on:
   push:
-    branches: main
+    branches: [ main ]
   pull_request:
-    branches: main
+    branches: [ main ]
 
 env:
   AWS_REGION: ap-southeast-2
