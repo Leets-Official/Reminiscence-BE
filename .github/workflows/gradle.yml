@@ -1,4 +1,4 @@
-name: CICD Test for Reminixcence
+name: CICD Test for Reminiscence
 run-name: Running
 on:
   push:
