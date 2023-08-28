@@ -63,7 +63,7 @@ public class SecurityConfig {
                 // 아이콘, css, js 관련
                 // 기본 페이지, css, image, js 하위 폴더에 있는 자료들은 모두 접근 가능, h2-console에 접근 가능
                 .antMatchers("/","/css/**","/images/**","/js/**","/favicon.ico","/h2-console/**").permitAll()
-                .antMatchers("/sign-up").permitAll() // 회원가입 접근git 가능
+                .antMatchers("/sign-up").permitAll() // 회원가입 접근 가능
                 .antMatchers(HttpMethod.OPTIONS, "/api/**").permitAll()
                 .antMatchers("/post").permitAll() // post 접근 가능
                 .antMatchers("/post/{id}").permitAll() // post id 정보 접근 가능
