@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source ~/.bash_profile
-
 ROOT_PATH="/home/ubuntu/Reminiscence-BE"
 JAR="$ROOT_PATH/build/libs/reminiscence-0.0.1-SNAPSHOT.jar"
 
@@ -10,6 +8,7 @@ ERROR_LOG="$ROOT_PATH/error.log"
 START_LOG="$ROOT_PATH/start.log"
 
 echo "$JAR 실행" >> $START_LOG
+source /home/ubuntu/.bash_profile
 nohup java -jar $JAR > $APP_LOG 2> $ERROR_LOG &
 
 SERVICE_PID=$(pgrep -f $JAR)
