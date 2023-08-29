@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ~/.bashrc
+source ~/.bash_profile
 
 ROOT_PATH="/home/ubuntu/Reminiscence-BE"
 JAR="$ROOT_PATH/build/libs/reminiscence-0.0.1-SNAPSHOT.jar"
