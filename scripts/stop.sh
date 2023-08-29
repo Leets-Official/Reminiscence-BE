@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ROOT_PATH="/home/ubuntu/Reminiscence-BE"
-JAR="$ROOT_PATH/application.jar"
+JAR="$ROOT_PATH/build/libs/reminiscence-0.0.1-SNAPSHOT.jar"
 STOP_LOG="$ROOT_PATH/stop.log"
 SERVICE_PID=$(pgrep -f $JAR) # 실행중인 Spring 서버의 PID
 
