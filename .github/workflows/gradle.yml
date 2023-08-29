@@ -8,7 +8,7 @@ on:
 
 env:
   AWS_REGION: ap-southeast-2
-  AWS_S3_BUCKET: app-release-files
+  AWS_S3_BUCKET: zero100bucket
   AWS_CODE_DEPLOY_APPLICATION: Zero100_CICD
   AWS_CODE_DEPLOY_GROUP: zero100_CICD_Group
 
