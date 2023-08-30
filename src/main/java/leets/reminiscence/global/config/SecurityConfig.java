@@ -25,6 +25,7 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.logout.LogoutFilter;
+import org.springframework.web.cors.CorsUtils;
 
 /**
  * 인증은 CustomJsonUsernamePasswordAuthenticationFilter에서 authenticate()로 인증된 사용자로 처리
@@ -46,6 +47,8 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
+                .cors() // spring-security에서 cors를 적용
+                .and()
                 .formLogin().disable() // FormLogin 사용 X
                 .httpBasic().disable() // httpBasic 사용 X
                 .csrf().disable() // csrf 보안 사용 X
@@ -64,6 +67,8 @@ public class SecurityConfig {
                 // 기본 페이지, css, image, js 하위 폴더에 있는 자료들은 모두 접근 가능, h2-console에 접근 가능
                 .antMatchers("/","/css/**","/images/**","/js/**","/favicon.ico","/h2-console/**").permitAll()
                 .antMatchers("/sign-up").permitAll() // 회원가입 접근 가능
+                .antMatchers("/login").permitAll() // 로그인 접근 가능
+                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll() // Preflight request에 대해, 인증을 하지 않고 요청을 모두 허용
                 .antMatchers(HttpMethod.OPTIONS, "/api/**").permitAll()
                 .antMatchers("/post").permitAll() // post 접근 가능
                 .antMatchers("/post/{id}").permitAll() // post id 정보 접근 가능
@@ -71,6 +76,8 @@ public class SecurityConfig {
                 .antMatchers("/v3/api-docs/**", "/swagger-ui/**").permitAll()
                 .anyRequest().authenticated() // 위의 경로 이외에는 모두 인증된 사용자만 접근 가능
                 .and()
+
+
                 //== 소셜 로그인 설정 ==//
                 .oauth2Login()
                 .successHandler(oAuth2LoginSuccessHandler) // 동의하고 계속하기를 눌렀을 때 Handler 설정
